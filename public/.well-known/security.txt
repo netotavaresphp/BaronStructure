@@ -1,0 +1,4 @@
+Contact: mailto:baron@aurios.dev
+Expires: 2026-12-31T23:59:59Z
+Preferred-Languages: pt, en
+Policy: https://aurios.dev/security

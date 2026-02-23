@@ -1,0 +1,12 @@
+Require all granted
+Options -Indexes
+
+# Impede execução de scripts no diretório de uploads
+<FilesMatch "(?i)\.(?:php|phtml|phar|cgi|pl|py|jsp|asp|aspx|sh|bat|cmd|exe|dll)$">
+    Require all denied
+</FilesMatch>
+
+# Se o Apache estiver usando mod_php, desliga engine PHP aqui
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
